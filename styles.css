@@ -116,50 +116,50 @@ body {
 .hero__store-panel {
   background: var(--surface);
   border-radius: 26px;
-  padding: 20px clamp(20px, 4vw, 30px);
-  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.15);
+  padding: clamp(24px, 4.5vw, 36px) clamp(24px, 5vw, 40px);
+  box-shadow: 0 28px 56px rgba(15, 23, 42, 0.18);
   display: grid;
-  gap: 12px;
-  backdrop-filter: blur(14px);
+  gap: clamp(16px, 3vw, 24px);
+  backdrop-filter: blur(16px);
 }
 
 .hero__store-heading {
   margin: 0;
-  font-weight: 600;
-  font-size: 0.98rem;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.2vw, 1.18rem);
   letter-spacing: 0.01em;
   color: rgba(15, 23, 42, 0.78);
 }
 
 .hero__store-support {
   margin: 0;
-  font-size: 0.9rem;
-  color: rgba(15, 23, 42, 0.6);
+  font-size: clamp(0.92rem, 1.8vw, 1.05rem);
+  color: rgba(15, 23, 42, 0.62);
 }
 
 .store-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(16px, 3vw, 24px);
 }
 
 .store-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 18px;
-  border-radius: 18px;
+  padding: clamp(16px, 3.5vw, 22px);
+  border-radius: 22px;
   background: var(--surface-strong);
   border: 1px solid rgba(15, 23, 42, 0.08);
-  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 24px 52px rgba(15, 23, 42, 0.16);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   text-decoration: none;
 }
 
 .store-button img {
-  height: clamp(44px, 4vw, 54px);
+  height: clamp(52px, 5vw, 64px);
   width: auto;
-  max-width: 240px;
+  max-width: clamp(220px, 30vw, 260px);
   display: block;
 }
 
@@ -271,11 +271,11 @@ body {
   }
 
   .hero__store-panel {
-    padding: 20px;
+    padding: 26px 22px;
   }
 
   .store-button img {
-    max-width: 260px;
+    max-width: 280px;
   }
 
   .store-list {
@@ -284,6 +284,7 @@ body {
 
   .store-button {
     width: 100%;
+    padding: 18px;
   }
 
   .hero__card {
@@ -313,7 +314,7 @@ body {
   }
 
   .store-button {
-    padding: 14px;
+    padding: 18px;
   }
 
   .hero__card {
