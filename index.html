@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Majestic Jewellers App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <span class="page__glow page__glow--one" aria-hidden="true"></span>
+    <span class="page__glow page__glow--two" aria-hidden="true"></span>
+
+    <main class="hero" role="main">
+      <div class="hero__content">
+        <div class="hero__badge">Mobile app</div>
+        <div class="hero__brand">
+          <img class="hero__icon" src="assets/majestic-icon.jpg" alt="Majestic Jewellers app icon">
+          <h1 class="hero__title">Majestic Jewellers</h1>
+        </div>
+        <p class="hero__subtitle">Choose the store that matches your device to keep the Majestic Jewellers experience at your fingertips.</p>
+
+        <section class="hero__store-panel" aria-label="Choose your store">
+          <p class="hero__store-heading">Continue on your device</p>
+          <p class="hero__store-support">Works beautifully on Android and iOS</p>
+          <div class="store-list">
+            <a class="store-button" href="https://play.google.com/store/apps/details?id=com.logiology.app.majestic" target="_blank" rel="noopener noreferrer" aria-label="Open Google Play">
+              <img src="assets/googleplay.png" alt="Get it on Google Play">
+            </a>
+            <a class="store-button" href="https://apps.apple.com/in/app/majestic-jewellers/id6447302439" target="_blank" rel="noopener noreferrer" aria-label="Open the App Store">
+              <img src="assets/appstore.png" alt="Download on the App Store">
+            </a>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="hero__card" aria-label="App highlights">
+        <h2>Your jeweller, always with you</h2>
+        <ul>
+          <li>Live gold rates, daily scheme updates, and reminders.</li>
+          <li>Join plans, track payments, and view your passbook on mobile.</li>
+          <li>Explore curated collections and checkout securely.</li>
+        </ul>
+      </aside>
+    </main>
+
+    <section class="features" aria-label="More reasons to use the app">
+      <article class="features__item">
+        <h3>Real-time insights</h3>
+        <p>Check today’s rates and view detailed product information before you visit the showroom.</p>
+      </article>
+      <article class="features__item">
+        <h3>Seamless management</h3>
+        <p>Digital passbooks, monthly payment tracking, and instant receipts keep everything organised.</p>
+      </article>
+      <article class="features__item">
+        <h3>Crafted for every device</h3>
+        <p>The app adapts beautifully to phones and tablets, delivering a premium Majestic experience anywhere.</p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <small>&copy; <span id="year"></span> Majestic Jewellers. All rights reserved.</small>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
